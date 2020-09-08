@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>welcome</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+    </head>
+<body>
+<h3><center>Checkout Form</center></h3>
+<form  role="form" method="post" action="index.php">
+<div class="container">
+              <div class="row">
+               <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Name :</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+               </div>
+                <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="mobile_number">
+                       Mob No :</label>
+                    <input type="text" class="form-control" id="name" name="mobile_number" required>
+                </div>
+                </div>
+                  <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <label for="address">
+                        Address :</label>
+                    <input type="text" class="form-control" id="name" name="address" required>
+		</div>
+                 </div>
+	     <div class="row">
+             <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email : </label>
+                    <input type="text" class="form-control" id="email" name="email">
+                </div>
+                 </div>
+               <div class="row">
+              <div class="col-sm-6 form-group">
+                    <label for="product_name">Prod Name :</label>
+                      <select id="product" name="product_name">
+                         <option value="a">A</option>
+                         <option value="b">B</option>
+                             <option value="c">C</option>
+                              <option value="d">D</option>
+                          <option value="e">E</option>
+                         </select>
+                </div>
+                 </div>
+                <div class="row">
+                <div class="col-sm-6 form-group">    
+                    <label for="quantity">
+                        Quantity :</label>
+                    <input type="text" class="form-control" id="name" name="quantity" required>
+                </div>
+               </div>
+		<div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="payment_methode">Payment Methode:     </label>
+                      <select id="payment" name="payment_methode">
+                         <option value="Net Banking">Net Banking</option>
+                         <option value="UPI">UPI</option>
+                         </select>
+                </div>
+              </div>
+           <center>
+            <div class="row">
+            <div class="col-sm-6 form-group">
+                   <input type="submit" value="Submit">
+                </div>
+            </div>
+         </center>
+        </form>
+</div>
+</body>
+</html> 
